@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/alopezsanchez/openweathermap-webapp.svg?token=6qSNERzZDiqRDDBJp1qb&branch=master)](https://travis-ci.com/alopezsanchez/openweathermap-webapp)
+
 # OpenweathermapWebapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.3.
