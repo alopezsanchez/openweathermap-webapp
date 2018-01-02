@@ -22,7 +22,7 @@ export class CitiesService {
       this.idsQueryString += index + 1 === arr.length ? city.id : `${city.id},`;
     });
     this.apiUrl =
-      `${this.apiEndpoint}${this.apiWeatherEndpoint}?${this.idsQueryString}${this.keyQueryString}`;
+      `${this.apiEndpoint}${this.apiWeatherEndpoint}?units=metric&${this.idsQueryString}${this.keyQueryString}`;
   }
 
   getCities(): Observable<any> {
