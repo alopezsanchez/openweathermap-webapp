@@ -1,0 +1,35 @@
+mat-card.ow-city-card {
+  max-width: 400px;
+  margin-bottom: 30px;
+  margin-right: 30px;
+}
+
+mat-card .ow-city-card-info {
+  display: flex;
+  flex-direction: column;
+}
+
+mat-card.ow-city-card .ow-city-card-name,
+mat-card.ow-city-card .ow-city-card-date {
+  color: gray;
+}
+
+
+mat-card.ow-city-card .ow-city-card-name {
+  font-size: 26px;
+}
+
+mat-card.ow-city-card .ow-city-card-date {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+mat-card.ow-city-card .ow-city-card-weather {
+  display: inline-flex;
+  padding-top: 15px;
+}
+
+mat-card.ow-city-card .ow-city-card-weather .ow-city-card-temp {
+  padding-left: 125px;
+  font-size: 35px;
+}

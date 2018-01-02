@@ -1,0 +1,5 @@
+div.ow-view {
+  padding: 10px 30px;
+  overflow: auto;
+  background-color: #F4F4F4;
+}
