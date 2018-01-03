@@ -1,16 +1,27 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DetailComponent } from './detail/detail.component';
+import { ChartsModule } from 'ng2-charts';
+
+import { MaterialModule } from '../material/material.module';
+import { DetailComponent } from './components/detail/detail.component';
+import { TemperatureChartComponent } from './components/temperature-chart/temperature-chart.component';
+import { PrecipitationChartComponent } from './components/precipitation-chart/precipitation-chart.component';
+import { HumidityChartComponent } from './components/humidity-chart/humidity-chart.component';
 
 @NgModule({
   imports: [
-    CommonModule
+    CommonModule,
+    ChartsModule,
+    MaterialModule
   ],
   exports: [
     DetailComponent
   ],
   declarations: [
-    DetailComponent
+    DetailComponent,
+    TemperatureChartComponent,
+    PrecipitationChartComponent,
+    HumidityChartComponent
   ]
 })
 export class CityDetailModule { }

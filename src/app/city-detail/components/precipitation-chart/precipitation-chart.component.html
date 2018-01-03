@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>Precipitations</mat-card-title>
+    <div class="ow-precipitations-chart-container">
+      <canvas
+        *ngIf="precipitationDataset"
+        baseChart
+        [datasets]="precipitationDataset"
+        [labels]="labels"
+        chartType="bar">
+      </canvas>
+    </div>
+  </mat-card>

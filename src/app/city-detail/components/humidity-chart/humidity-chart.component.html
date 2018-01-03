@@ -1,0 +1,12 @@
+<mat-card>
+    <mat-card-title>Humidity</mat-card-title>
+    <div class="ow-humidity-chart-container">
+      <canvas
+        *ngIf="humidityDataset"
+        baseChart
+        [datasets]="humidityDataset"
+        [labels]="labels"
+        chartType="bar">
+      </canvas>
+    </div>
+  </mat-card>

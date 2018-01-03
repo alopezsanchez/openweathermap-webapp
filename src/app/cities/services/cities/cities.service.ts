@@ -14,18 +14,29 @@ export class CitiesService {
   private keyQueryString: any = `&APPID=${this.apiKey}`;
   private apiEndpoint: string = environment.apiEndpoint;
   private apiWeatherEndpoint = '/group';
+  private apiForecastEndpoint = '/forecast';
   private idsQueryString = 'id=';
-  private apiUrl = '';
+  private weatherApiUrl = '';
 
   constructor(private http: HttpClient) {
     CITIES.forEach((city, index, arr) => {
       this.idsQueryString += index + 1 === arr.length ? city.id : `${city.id},`;
     });
-    this.apiUrl =
+    this.weatherApiUrl =
       `${this.apiEndpoint}${this.apiWeatherEndpoint}?units=metric&${this.idsQueryString}${this.keyQueryString}`;
   }
 
   getCities(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
+    return this.http.get<any>(this.weatherApiUrl);
+  }
+
+  getCityMock(cityId) {
+    return CITIES.filter(city => city.id === cityId)[0];
+  }
+
+  getCityForecast(cityId: number): Observable<any> {
+    const url =
+      `${this.apiEndpoint}${this.apiForecastEndpoint}?units=metric&id=${cityId}${this.keyQueryString}`;
+    return this.http.get<any>(url);
   }
 }

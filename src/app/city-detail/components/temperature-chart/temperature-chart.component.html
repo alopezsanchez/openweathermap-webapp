@@ -1,0 +1,12 @@
+<mat-card>
+  <mat-card-title>Temperature</mat-card-title>
+  <div class="ow-temperature-chart-container">
+    <canvas
+      *ngIf="tempDataset"
+      baseChart
+      [datasets]="tempDataset"
+      [labels]="labels"
+      chartType="line">
+    </canvas>
+  </div>
+</mat-card>

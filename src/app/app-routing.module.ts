@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CitiesListComponent } from './cities/components/cities-list/cities-list.component';
-import { DetailComponent } from './city-detail/detail/detail.component';
+import { DetailComponent } from './city-detail/components/detail/detail.component';
 
 const routes: Routes = [
   { path: 'cities', component: CitiesListComponent },
