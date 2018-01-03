@@ -1,5 +1,9 @@
 .ow-humidity-chart-container {
   display: block;
-  min-width: 300px;
-  max-width: 1500px;
+}
+
+.ow-chart-card {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }

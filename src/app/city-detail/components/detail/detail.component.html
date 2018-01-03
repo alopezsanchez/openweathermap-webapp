@@ -1,7 +1,9 @@
-<span class="mat-headline">Evolution of {{ cityInfo.name }} forecast</span>
+<div class="ow-detail-title">
+  <span class="mat-headline">Evolution of {{ cityInfo.name }} forecast</span>
+</div>
 
 <div class="ow-charts-container">
-  <ow-temperature-chart [forecastData]="forecast"></ow-temperature-chart>
-  <ow-precipitation-chart [forecastData]="forecast"></ow-precipitation-chart>
-  <ow-humidity-chart [forecastData]="forecast"></ow-humidity-chart>
+  <ow-temperature-chart class="ow-chart" [forecastData]="forecast"></ow-temperature-chart>
+  <ow-precipitation-chart class="ow-chart" [forecastData]="forecast"></ow-precipitation-chart>
+  <ow-humidity-chart class="ow-chart" [forecastData]="forecast"></ow-humidity-chart>
 </div>
