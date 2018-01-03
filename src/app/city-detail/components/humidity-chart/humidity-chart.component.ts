@@ -12,6 +12,16 @@ export class HumidityChartComponent implements OnInit {
   private humidityValues: number[];
   public labels: string[];
   public humidityDataset: object[];
+  public colors: object[] = [
+    { // blue
+      backgroundColor: 'rgba(40, 166, 229,0.7)',
+      borderColor: 'rgba(40, 166, 229,1)',
+      pointBackgroundColor: 'rgba(40, 166, 229,1)',
+      pointBorderColor: '#fff',
+      pointHoverBackgroundColor: '#fff',
+      pointHoverBorderColor: 'rgba(40, 166, 229,0.8)'
+    }
+  ];
 
   @Input()
   set forecastData(value) {
@@ -41,5 +51,4 @@ export class HumidityChartComponent implements OnInit {
         }
       });
   }
-
 }
