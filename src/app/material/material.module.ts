@@ -17,7 +17,8 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
   ],
   exports: [
     ToolbarComponent,
-    MatCardModule
+    MatCardModule,
+    MatButtonModule
   ],
   declarations: [
     ToolbarComponent

@@ -2,6 +2,7 @@ mat-card.ow-city-card {
   width: 250px;
   margin-bottom: 30px;
   margin-right: 15px;
+  cursor: pointer;
 }
 
 mat-card .ow-city-card-info {
@@ -49,4 +50,10 @@ mat-card.ow-city-card .ow-city-card-weather .ow-city-card-temp {
 mat-card.ow-city-card .ow-city-card-weather .ow-city-card-desc {
   font-size: 18px;
   padding-top: 20px;
+}
+
+mat-card-actions {
+  margin-top: 18px;
+  display: flex;
+  justify-content: flex-end
 }

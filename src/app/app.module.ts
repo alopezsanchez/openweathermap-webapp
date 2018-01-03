@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from './material/material.module';
 import { CitiesModule } from './cities/cities.module';
 import { AppComponent } from './app.component';
+import { CityDetailModule } from './city-detail/city-detail.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AppComponent } from './app.component';
     FlexLayoutModule,
     AppRoutingModule,
     MaterialModule,
-    CitiesModule
+    CitiesModule,
+    CityDetailModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,4 @@
-<mat-card class="ow-city-card">
+<mat-card routerLink="/cities/{{city.id}}" tabindex="0" class="ow-city-card">
   <div class="ow-city-card-info">
     <span class="ow-city-card-name">{{ city.name }}</span>
     <span class="ow-city-card-date">{{ today | date }}</span>
@@ -10,4 +10,7 @@
       <span class="ow-city-card-desc">{{ city.weather[0].main }}</span>
     </div>
   </div>
+  <mat-card-actions>
+    <a mat-button class="ow-city-card-link" routerLink="/cities/{{city.id}}">More details</a>
+  </mat-card-actions>
 </mat-card>
