@@ -4,6 +4,10 @@
     <span class="ow-city-card-date">{{ today | date }}</span>
   </div>
   <div class="ow-city-card-weather">
-    <span class="ow-city-card-temp">{{ city.main.temp }}º</span>
+    <img src="{{ icon }}" alt="Weather logo">
+    <div class="ow-city-card-weather-values">
+      <span class="ow-city-card-temp">{{ city.main.temp }}º</span>
+      <span class="ow-city-card-desc">{{ city.weather[0].main }}</span>
+    </div>
   </div>
 </mat-card>

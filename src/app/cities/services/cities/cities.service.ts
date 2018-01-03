@@ -3,8 +3,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs/Observable';
 import { of } from 'rxjs/observable/of';
 
-import { environment } from './../../environments/environment';
-import { City } from './models/city';
+import { environment } from './../../../../environments/environment';
+import { City } from '../../models/city';
 import { CITIES } from './mock-cities';
 
 @Injectable()

@@ -7,12 +7,12 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CityCardComponent implements OnInit {
 
-  @Input() private city: any;
-  private today: number = Date.now();
+  @Input() public city: any;
+  @Input() public icon: any;
+  public today: number = Date.now();
 
   constructor() { }
 
   ngOnInit() {
   }
-
 }

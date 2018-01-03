@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { CitiesListComponent } from './components/cities-list/cities-list.component';
-import { CitiesService } from './cities.service';
-import { CityCardComponent } from './components/city-card/city-card.component';
 import { MaterialModule } from '../material/material.module';
+import { CitiesService } from './services/cities/cities.service';
+import { CitiesListComponent } from './components/cities-list/cities-list.component';
+import { CityCardComponent } from './components/city-card/city-card.component';
 
 @NgModule({
   imports: [
@@ -19,6 +19,8 @@ import { MaterialModule } from '../material/material.module';
     CitiesListComponent,
     CityCardComponent
   ],
-  providers: [CitiesService]
+  providers: [
+    CitiesService
+  ]
 })
 export class CitiesModule { }

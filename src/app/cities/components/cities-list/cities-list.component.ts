@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
-import { CitiesService } from '../../cities.service';
+import { environment } from '../../../../environments/environment';
+import { CitiesService } from '../../services/cities/cities.service';
 import { City } from '../../models/city';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'ow-cities-list',
@@ -10,7 +12,7 @@ import { City } from '../../models/city';
 })
 export class CitiesListComponent implements OnInit {
 
-  private cities: any[] = [];
+  public cities: any[] = [];
 
   constructor(private citiesService: CitiesService) { }
 
@@ -21,5 +23,9 @@ export class CitiesListComponent implements OnInit {
   getCities(): void {
     this.citiesService.getCities()
       .subscribe(cities => this.cities = cities.list);
+  }
+
+  getIconUrl(iconId: string): string {
+    return `${environment.iconApiEndpoint}/${iconId}.png`;
   }
 }

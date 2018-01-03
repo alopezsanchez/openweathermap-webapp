@@ -1,4 +1,4 @@
-import { City } from './models/city';
+import { City } from '../../models/city';
 
 export const CITIES: City[] = [
   { id: 3119841, name: 'A Coruna' },
