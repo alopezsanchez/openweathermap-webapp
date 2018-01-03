@@ -4,4 +4,9 @@
   justify-content: center;
   align-items: center;
   align-content: center;
+  margin-top: 20px;
+}
+
+.ow-cities-list-title {
+  text-align: center;
 }
