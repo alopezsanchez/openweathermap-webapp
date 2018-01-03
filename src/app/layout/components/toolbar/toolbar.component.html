@@ -1,0 +1,6 @@
+<mat-toolbar class="mat-elevation-z4" color="primary" role="header">
+  <button (click)="goBack()" *ngIf="canGoBack()" mat-icon-button>
+    <mat-icon>arrow_back</mat-icon>
+  </button>
+  <span class="ow-toolbar-title">{{ title }}</span>
+</mat-toolbar>

@@ -5,8 +5,6 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
 
-import { ToolbarComponent } from './components/toolbar/toolbar.component';
-
 @NgModule({
   imports: [
     CommonModule,
@@ -16,12 +14,11 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
     MatCardModule
   ],
   exports: [
-    ToolbarComponent,
     MatCardModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
+    MatToolbarModule
   ],
-  declarations: [
-    ToolbarComponent
-  ]
+  declarations: []
 })
 export class MaterialModule { }

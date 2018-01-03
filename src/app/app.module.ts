@@ -7,6 +7,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { AppRoutingModule } from './app-routing.module';
 
 import { MaterialModule } from './material/material.module';
+import { LayoutModule } from './layout/layout.module';
 import { CitiesModule } from './cities/cities.module';
 import { AppComponent } from './app.component';
 import { CityDetailModule } from './city-detail/city-detail.module';
@@ -22,6 +23,7 @@ import { CityDetailModule } from './city-detail/city-detail.module';
     FlexLayoutModule,
     AppRoutingModule,
     MaterialModule,
+    LayoutModule,
     CitiesModule,
     CityDetailModule
   ],

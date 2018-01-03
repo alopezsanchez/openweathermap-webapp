@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { Location } from '@angular/common';
 import * as moment from 'moment';
 
 import { CitiesService } from '../../../cities/services/cities/cities.service';
@@ -18,7 +17,7 @@ export class DetailComponent implements OnInit {
   public forecast: any;
   public todayForecast: any[];
 
-  constructor(private citiesService: CitiesService, private route: ActivatedRoute, private location: Location) { }
+  constructor(private citiesService: CitiesService, private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.cityId = +this.route.snapshot.paramMap.get('id');
