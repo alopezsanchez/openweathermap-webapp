@@ -1,0 +1,9 @@
+<mat-list class="ow-daily-list">
+  <h3 mat-header>Daily forecast</h3>
+  <mat-list-item *ngFor="let daily of dailyForecastData">
+    <img matListAvatar [src]="getIconUrl(daily.weather[0].icon)" alt="Weather icon">
+    <h2 class="mat-title" matLine>{{ daily.dt_txt | date }}</h2>
+    <span class="mat-body-2 ow-temperature">{{ daily.main.temp }}º</span>
+    <span matLine class="mat-body ow-weather">{{ daily.weather[0].main }}</span>
+  </mat-list-item>
+</mat-list>

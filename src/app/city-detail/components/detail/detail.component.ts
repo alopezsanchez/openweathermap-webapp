@@ -15,7 +15,7 @@ export class DetailComponent implements OnInit {
   private todayDate = moment().format('YYYY-MM-DD');
   public cityInfo: City;
   public forecast: any;
-  public todayForecast: any[];
+  public dailyForecast: any[];
 
   constructor(private citiesService: CitiesService, private route: ActivatedRoute) { }
 
@@ -29,8 +29,8 @@ export class DetailComponent implements OnInit {
     this.citiesService.getCityForecast(this.cityId)
       .subscribe(response => {
         this.forecast = response.list;
-        // filter today's forecast
-        this.todayForecast = this.forecast.filter(element => element.dt_txt.indexOf(this.todayDate) > -1);
+        // filter daily forecast (15:00)
+        this.dailyForecast = this.forecast.filter(element => element.dt_txt.indexOf('15:00:00') > -1);
       });
   }
 }

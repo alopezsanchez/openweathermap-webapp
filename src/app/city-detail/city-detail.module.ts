@@ -7,6 +7,7 @@ import { DetailComponent } from './components/detail/detail.component';
 import { TemperatureChartComponent } from './components/temperature-chart/temperature-chart.component';
 import { PrecipitationChartComponent } from './components/precipitation-chart/precipitation-chart.component';
 import { HumidityChartComponent } from './components/humidity-chart/humidity-chart.component';
+import { DailyListComponent } from './components/daily-list/daily-list.component';
 
 @NgModule({
   imports: [
@@ -21,7 +22,8 @@ import { HumidityChartComponent } from './components/humidity-chart/humidity-cha
     DetailComponent,
     TemperatureChartComponent,
     PrecipitationChartComponent,
-    HumidityChartComponent
+    HumidityChartComponent,
+    DailyListComponent
   ]
 })
 export class CityDetailModule { }
