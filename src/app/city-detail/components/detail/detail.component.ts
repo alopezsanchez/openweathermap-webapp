@@ -30,7 +30,9 @@ export class DetailComponent implements OnInit {
       .subscribe(response => {
         this.forecast = response.list;
         // filter daily forecast (15:00)
-        this.dailyForecast = this.forecast.filter(element => element.dt_txt.indexOf('15:00:00') > -1);
+        // skip today forecast
+        this.dailyForecast =
+          this.forecast.filter(element => element.dt_txt.indexOf(this.todayDate) === -1 && element.dt_txt.indexOf('15:00:00') > -1);
       });
   }
 }
