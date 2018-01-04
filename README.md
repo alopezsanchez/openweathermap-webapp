@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/alopezsanchez/openweathermap-webapp.svg?token=6qSNERzZDiqRDDBJp1qb&branch=master)](https://travis-ci.com/alopezsanchez/openweathermap-webapp)
+[![Build Status](https://travis-ci.org/alopezsanchez/openweathermap-webapp.svg?branch=master)](https://travis-ci.org/alopezsanchez/openweathermap-webapp)
 
 # Open weather app
 
