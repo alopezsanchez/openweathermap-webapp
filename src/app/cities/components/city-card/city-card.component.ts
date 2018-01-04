@@ -6,9 +6,9 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./city-card.component.css']
 })
 export class CityCardComponent implements OnInit {
-
   @Input() public city: any;
   @Input() public icon: any;
+
   public today: number = Date.now();
 
   constructor() { }

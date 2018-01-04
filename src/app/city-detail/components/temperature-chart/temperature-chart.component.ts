@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-
 @Component({
   selector: 'ow-temperature-chart',
   templateUrl: './temperature-chart.component.html',

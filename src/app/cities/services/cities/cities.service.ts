@@ -9,7 +9,6 @@ import { CITIES } from './mock-cities';
 
 @Injectable()
 export class CitiesService {
-
   private apiKey: string = environment.apiKey;
   private keyQueryString: any = `&APPID=${this.apiKey}`;
   private apiEndpoint: string = environment.apiEndpoint;

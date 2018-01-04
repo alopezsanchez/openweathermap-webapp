@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
-// TODO: Change dataset color
 @Component({
   selector: 'ow-precipitation-chart',
   templateUrl: './precipitation-chart.component.html',
@@ -52,5 +51,4 @@ export class PrecipitationChartComponent implements OnInit {
         }
       });
   }
-
 }

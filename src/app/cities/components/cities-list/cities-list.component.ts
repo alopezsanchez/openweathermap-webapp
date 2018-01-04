@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs/Observable';
 
 import { environment } from '../../../../environments/environment';
 import { CitiesService } from '../../services/cities/cities.service';
 import { City } from '../../models/city';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'ow-cities-list',
@@ -11,7 +11,6 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./cities-list.component.css']
 })
 export class CitiesListComponent implements OnInit {
-
   public cities: any[] = [];
 
   constructor(private citiesService: CitiesService) { }
