@@ -1,7 +1,6 @@
 import cities from '../fixtures/cities.json';
 
 describe('Application structure', () => {
-
   it('should assert that <title> is correct', () => {
     cy.visit('/');
 

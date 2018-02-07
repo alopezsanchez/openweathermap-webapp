@@ -1,3 +1,4 @@
 {
-  "baseUrl": "http://localhost:4200"
+  "baseUrl": "https://my-open-weather-app.firebaseapp.com",
+  "projectId": "y7mc4t"
 }
