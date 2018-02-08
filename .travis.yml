@@ -8,6 +8,9 @@ cache:
     - ~/.npm
     - node_modules
 
+before_script: # commands to run before the build step
+  - npm install -g firebase-tools
+
 script: # the build step
   - npm run lint
   - npm run build
