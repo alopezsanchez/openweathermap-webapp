@@ -45,7 +45,7 @@ export class PrecipitationChartComponent implements OnInit {
           // obtain labels
           this.labels = this.data.map(forecast => forecast.dt_txt);
           // obtain values
-          this.precipitationValues = this.data.map(forecast => forecast.rain['3h']);
+          this.precipitationValues = this.data.map(forecast => forecast.rain && forecast.rain['3h'] || 0);
           // build dataset
           this.precipitationDataset = [{ data: this.precipitationValues, label: 'Precipitations (mm)' }];
         }
